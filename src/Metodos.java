@@ -6,6 +6,7 @@ import facebook4j.FacebookFactory;
 import facebook4j.Post;
 import facebook4j.PostUpdate;
 import facebook4j.ResponseList;
+import facebook4j.User;
 import facebook4j.conf.ConfigurationBuilder;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -62,9 +63,20 @@ public class Metodos {
         JOptionPane.showMessageDialog(null, results);
     }
 
-    public void comentarios() throws FacebookException {
+    public void buscarComentarios() throws FacebookException {
 
         ResponseList<Comment> lista = PFclase.getCommentReplies(JOptionPane.showInputDialog("Selecciona el post del que buscar comentarios"));
         System.out.println(lista);
+    }
+    
+    public void comentarFoto() throws FacebookException {
+
+        PFclase.commentPhoto(JOptionPane.showInputDialog("Introduce la ID del post \n (Para obtenerla haz click en la hora \n del post y copia los numeros del enlace)"), JOptionPane.showInputDialog("Introduce el comentario"));
+    }
+
+    public void buscarUser() throws FacebookException {
+
+        ResponseList<User> userlist = PFclase.searchUsers(JOptionPane.showInputDialog("Introduce el nombre a buscar"));
+        System.out.println(userlist);
     }
 }
