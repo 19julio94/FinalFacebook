@@ -36,9 +36,9 @@ public class Metodos {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         //introducir los tokens en los huecos con comillas
         cb.setDebugEnabled(true)
-                .setOAuthAppId("796736570460792")
-                .setOAuthAppSecret("c8386005ef537ef56daa494410a8c049")
-                .setOAuthAccessToken("EAACEdEose0cBAH5ZCjrTpvdOEM4uDmZBQw1MFZAD8rRCL0iZBdW5ZBMSo4040DsiBy8NZBGcy7whMA2uKnxwBZCzMKpQm4VIL5ZAmcgqHOsMtLmNdhziuQiIZAnssXc0dZCVSkgCUDqlSTFai8WuJ1elQhyweCCvv2Ig1qEzkkHTPf0wZDZD");
+                .setOAuthAppId("")
+                .setOAuthAppSecret("")
+                .setOAuthAccessToken("");
 
         FacebookFactory ff = new FacebookFactory(cb.build());
         PFclase = ff.getInstance();
