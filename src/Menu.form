@@ -103,6 +103,9 @@
             </Property>
             <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="publicarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="comentario">
           <Properties>
@@ -115,6 +118,9 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comentarioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="megusta">
           <Properties>
@@ -128,6 +134,9 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="megustaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="foto">
           <Properties>
@@ -140,6 +149,9 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fotoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="buscartema">
           <Properties>
@@ -152,6 +164,9 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscartemaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="buscaruser">
           <Properties>
@@ -164,11 +179,17 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buscaruserActionPerformed"/>
+          </Events>
         </Component>
         <Component class="org.edisoncor.gui.button.ButtonAction" name="bComentario">
           <Properties>
             <Property name="text" type="java.lang.String" value="B.Comentario"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bComentarioActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

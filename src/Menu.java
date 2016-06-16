@@ -42,34 +42,69 @@ public class Menu extends javax.swing.JFrame {
         publicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/publicar.PNG"))); // NOI18N
         publicar.setBorder(null);
         publicar.setBorderPainted(false);
+        publicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                publicarActionPerformed(evt);
+            }
+        });
 
         comentario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Forum-for-pages-logo.png"))); // NOI18N
         comentario.setBorder(null);
         comentario.setBorderPainted(false);
         comentario.setContentAreaFilled(false);
+        comentario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comentarioActionPerformed(evt);
+            }
+        });
 
         megusta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/me_gusta_png_by_maary17-d5az2au.png"))); // NOI18N
         megusta.setToolTipText("");
         megusta.setBorder(null);
         megusta.setBorderPainted(false);
         megusta.setContentAreaFilled(false);
+        megusta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                megustaActionPerformed(evt);
+            }
+        });
 
         foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/unnamed.png"))); // NOI18N
         foto.setBorder(null);
         foto.setBorderPainted(false);
         foto.setContentAreaFilled(false);
+        foto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fotoActionPerformed(evt);
+            }
+        });
 
         buscartema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lupa.png"))); // NOI18N
         buscartema.setBorder(null);
         buscartema.setBorderPainted(false);
         buscartema.setContentAreaFilled(false);
+        buscartema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buscartemaActionPerformed(evt);
+            }
+        });
 
         buscaruser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatar JDBlog.png"))); // NOI18N
         buscaruser.setBorder(null);
         buscaruser.setBorderPainted(false);
         buscaruser.setContentAreaFilled(false);
+        buscaruser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buscaruserActionPerformed(evt);
+            }
+        });
 
         bComentario.setText("B.Comentario");
+        bComentario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bComentarioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
@@ -127,6 +162,34 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void publicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_publicarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_publicarActionPerformed
+
+    private void comentarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comentarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comentarioActionPerformed
+
+    private void megustaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_megustaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_megustaActionPerformed
+
+    private void fotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fotoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fotoActionPerformed
+
+    private void buscartemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscartemaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscartemaActionPerformed
+
+    private void buscaruserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscaruserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscaruserActionPerformed
+
+    private void bComentarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bComentarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bComentarioActionPerformed
 
     /**
      * @param args the command line arguments
