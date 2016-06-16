@@ -1,3 +1,9 @@
+
+import facebook4j.FacebookException;
+import java.net.MalformedURLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +15,13 @@
  * @author JP
  */
 public class Menu extends javax.swing.JFrame {
-
+    Metodos sj = new Metodos();
     /**
      * Creates new form Menu
      */
     public Menu() {
         initComponents();
+        sj.iniciar();
     }
 
     /**
@@ -164,31 +171,61 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void publicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_publicarActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.estado();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_publicarActionPerformed
 
     private void comentarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comentarioActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.comentarFoto();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_comentarioActionPerformed
 
     private void megustaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_megustaActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.darLike();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_megustaActionPerformed
 
     private void fotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fotoActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.subirImagen();
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_fotoActionPerformed
 
     private void buscartemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscartemaActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.buscarTema();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_buscartemaActionPerformed
 
     private void buscaruserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscaruserActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.buscarUsuario();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_buscaruserActionPerformed
 
     private void bComentarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bComentarioActionPerformed
-        // TODO add your handling code here:
+        try {
+            sj.buscarComentarios();
+        } catch (FacebookException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_bComentarioActionPerformed
 
     /**

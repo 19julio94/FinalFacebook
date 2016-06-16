@@ -74,7 +74,7 @@ public class Metodos {
         PFclase.commentPhoto(JOptionPane.showInputDialog("Introduce la ID del post \n (Para obtenerla haz click en la hora \n del post y copia los numeros del enlace)"), JOptionPane.showInputDialog("Introduce el comentario"));
     }
 
-    public void buscarUser() throws FacebookException {
+    public void buscarUsuario() throws FacebookException {
 
         ResponseList<User> userlist = PFclase.searchUsers(JOptionPane.showInputDialog("Introduce el nombre a buscar"));
         System.out.println(userlist);
