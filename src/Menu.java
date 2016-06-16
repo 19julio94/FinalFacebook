@@ -27,20 +27,91 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         panel1 = new org.edisoncor.gui.panel.Panel();
+        publicar = new javax.swing.JButton();
+        comentario = new javax.swing.JButton();
+        megusta = new javax.swing.JButton();
+        foto = new javax.swing.JButton();
+        buscartema = new javax.swing.JButton();
+        buscaruser = new javax.swing.JButton();
+        bComentario = new org.edisoncor.gui.button.ButtonAction();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/4979dae50bdd7e1212c4eb96b4ace819_large.jpeg"))); // NOI18N
 
+        publicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/publicar.PNG"))); // NOI18N
+        publicar.setBorder(null);
+        publicar.setBorderPainted(false);
+
+        comentario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Forum-for-pages-logo.png"))); // NOI18N
+        comentario.setBorder(null);
+        comentario.setBorderPainted(false);
+        comentario.setContentAreaFilled(false);
+
+        megusta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/me_gusta_png_by_maary17-d5az2au.png"))); // NOI18N
+        megusta.setToolTipText("");
+        megusta.setBorder(null);
+        megusta.setBorderPainted(false);
+        megusta.setContentAreaFilled(false);
+
+        foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/unnamed.png"))); // NOI18N
+        foto.setBorder(null);
+        foto.setBorderPainted(false);
+        foto.setContentAreaFilled(false);
+
+        buscartema.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lupa.png"))); // NOI18N
+        buscartema.setBorder(null);
+        buscartema.setBorderPainted(false);
+        buscartema.setContentAreaFilled(false);
+
+        buscaruser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatar JDBlog.png"))); // NOI18N
+        buscaruser.setBorder(null);
+        buscaruser.setBorderPainted(false);
+        buscaruser.setContentAreaFilled(false);
+
+        bComentario.setText("B.Comentario");
+
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
         panel1Layout.setHorizontalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 558, Short.MAX_VALUE)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap(421, Short.MAX_VALUE)
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                            .addComponent(publicar)
+                            .addGap(42, 42, 42))
+                        .addGroup(panel1Layout.createSequentialGroup()
+                            .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(buscaruser, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+                                .addComponent(buscartema, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(foto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(megusta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(comentario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addContainerGap()))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                        .addComponent(bComentario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21))))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 494, Short.MAX_VALUE)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addComponent(publicar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(comentario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(megusta)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(foto)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buscartema)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buscaruser)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bComentario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,6 +164,13 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private org.edisoncor.gui.button.ButtonAction bComentario;
+    private javax.swing.JButton buscartema;
+    private javax.swing.JButton buscaruser;
+    private javax.swing.JButton comentario;
+    private javax.swing.JButton foto;
+    private javax.swing.JButton megusta;
     private org.edisoncor.gui.panel.Panel panel1;
+    private javax.swing.JButton publicar;
     // End of variables declaration//GEN-END:variables
 }
